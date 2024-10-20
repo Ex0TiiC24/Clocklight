@@ -10,11 +10,11 @@ function App() {
   const [mode,setMode] = useState('Darkmode')
   
   const darkModeHandler = () => {
-    if(mode==="Darkmode"){
-      setMode("Lightmode")
+    if(mode==="Lightmode"){
+      setMode("Darkmode")
     }
     else{
-      setMode("Darkmode")
+      setMode("Lightmode")
     }
     setDark(!dark);
     document.body.classList.toggle("dark");
